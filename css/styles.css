@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+  }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    cursor: crosshair;
+}
+
+a{
+    color: white !important;
+}
+
+a:link,:hover,:active {
+    text-decoration: underline;
+  }
+  
+
+
+body{
+    background-image: url("../img/paper-none.jpg");
+}
+
+.sidenav {
+    height: 100%;
+    position: absolute !important;
+    background-image: url("../img/black-texture.jpg");
+    padding-top: 20px;
+    color: white;
+    -webkit-animation: ruido .5s infinite;
+    animation: ruido .5s infinite;
+    font-size: 90%;
+  }
+
+.content{
+    margin-left: 33%;
+    color: black;
+    height: 1000px;
+}
+
+
+.separator{
+    height: 2px;
+    background-color: gray;
+}
+
+.foto{
+    max-height: 100px;
+    box-shadow: 0 2px 2px 0 rgba(211, 209, 209, 0.16), 0 0 0 1px rgba(211, 209, 209, 0.08);
+}
+
+.foto:hover{
+    animation-name: animate__bounceIn;
+}
+
+@media only screen and (max-width : 991px) {
+    .sidenav {
+        height: auto; /* Full-height: remove this if you want "auto" height */
+        position: relative !important; /* Fixed Sidebar (stay in place on scroll) */
+        width: 100% !important;
+        background-color:#111; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+    }
+
+    .foto{
+        max-height: 200px;
+    }
+
+    .content{
+        margin-left: 0%;
+    }
+}
+
+@-webkit-keyframes ruido {
+    0% {
+        background-position: top;
+    }
+    10% {
+        background-position: left;
+    }
+    20% {
+        background-position: bottom;
+    }
+    30% {
+        background-position: center;
+    }
+    40% {
+        background-position: top;
+    }
+    50% {
+        background-position: right;
+    }
+    60% {
+        background-position: top;
+    }
+    70% {
+        background-position: left;
+    }
+    80% {
+        background-position: bottom;
+    }
+    90% {
+        background-position: right;
+    }
+    100% {
+        background-position: top;
+    }
+}
+
+@keyframes ruido {
+    0% {
+        background-position: top;
+    }
+    10% {
+        background-position: left;
+    }
+    20% {
+        background-position: bottom;
+    }
+    30% {
+        background-position: center;
+    }
+    40% {
+        background-position: top;
+    }
+    50% {
+        background-position: right;
+    }
+    60% {
+        background-position: top;
+    }
+    70% {
+        background-position: left;
+    }
+    80% {
+        background-position: bottom;
+    }
+    90% {
+        background-position: right;
+    }
+    100% {
+        background-position: top;
+    }
+}
+
+
+
+
